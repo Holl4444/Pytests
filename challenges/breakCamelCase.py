@@ -4,7 +4,7 @@ def breakCamelCase(string: str):
     for word in words:
         word = word[0] + ''.join([f' {char}' if char == char.upper() else char for char in word[1:]])
         clean_array.append(word)
-    return ' '.join(clean_array) if len(clean_array) > 1 else clean_array[0]
+    return ' '.join(clean_array)
 
 print(breakCamelCase('breakCamelCase'))
 
